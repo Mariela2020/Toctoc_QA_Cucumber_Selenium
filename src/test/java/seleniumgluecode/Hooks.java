@@ -23,14 +23,14 @@ public class Hooks {
     public void setup(){
         numerOfCase ++;
         System.out.println("Se esta ejecutando el escenario nro: " + numerOfCase);
-        driverManager = DriverManagerFactory.getManager(DriverType.CHROME);
+        driverManager = DriverManagerFactory.getManager(DriverType.FIREFOX);
         driver = driverManager.getDriver();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.get("https://ww2.toctoc.com/gestioncorredor/");
         driver.manage().window().maximize();
     }
 
-    @After("@producto")
+    @After("@browser")
     public void tearDown(Scenario scenario){
         if(scenario.isFailed()) {
             byte[] screenshot = ((TakesScreenshot) driverManager.getDriver()).getScreenshotAs(OutputType.BYTES);

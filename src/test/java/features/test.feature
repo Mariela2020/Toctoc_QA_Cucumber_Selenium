@@ -44,15 +44,15 @@ Feature: Catalogo de Productos y Planes
 
 
 
-  #@browser
+ # @browser
  # Scenario: Scenario5: Ingresar al catologo de planes en la página Gestion Corredor
-  #   Given El usuario se encuentra en la página de Gestion Corredor
-  #      And Hace click sobre el botón Ver Planes
-  #      And Visualiza la información del plan seleccionado
-  #      And Darle click al botón Contratar
-  #      And Llena el primer formulario con los campos solicitados
-  #      And Llena el segundo formulario con los campos solicitados
-  #      And Tilda el checkbox Declaro conocer y aceptar los Términos y condiciones de TOCTOC del Plan
-  #   When Cuando el usuario rellena todos los datos e imagen solicitados
-  #      And Darle click al boton Enviar
-  #   Then Se debe redireccionar a la página Detalle del contrato del plan a contratar
+ #    Given El usuario se encuentra en la página de Gestion Corredor
+ #       And Hace click sobre el botón Ver Planes
+ #       And Visualiza la información del plan seleccionado
+ #       And Darle click al botón Contratar
+ #       And Llena el primer formulario con los campos solicitados
+ #       And Llena el segundo formulario con los campos solicitados
+ #      And Tilda el checkbox Declaro conocer y aceptar los Términos y condiciones de TOCTOC del Plan
+ #    When Cuando el usuario rellena todos los datos e imagen solicitados
+ #       And Darle click al boton Enviar
+ #    Then Se debe redireccionar a la página Detalle del contrato del plan a contratar
