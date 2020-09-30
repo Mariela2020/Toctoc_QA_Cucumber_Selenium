@@ -185,6 +185,13 @@ public class Test extends TestBase{
          planPage.clickOnTarjetaPlan();
     }
 
+    @And("^Registrar Usuario$")
+    public void registrarUsuario() throws Exception {
+        Assert.assertTrue(registroPagePlan.registroPagePlanIsDisplayed());
+        registroPagePlan.typeRegistroPagePlan();
+        registroPagePlan.clickOnextstep();
+    }
+
     @And("^Llena el primer formulario con los campos solicitados$")
     public void llenaElPrimerFormularioConLosCamposSolicitados() throws Exception {
          Assert.assertTrue(datosContratoPlan.isImagenDisplayed8());
@@ -217,6 +224,7 @@ public class Test extends TestBase{
     public void seDebeRedireccionarALaPáginaDetalleDelContratoDelPlanAContratar() throws Exception {
         Assert.assertTrue(detalleContratoPlan.istitledetalleDisplayed9());
     }
+
 
 
 }

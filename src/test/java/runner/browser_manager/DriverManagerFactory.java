@@ -24,6 +24,10 @@ public class DriverManagerFactory {
                  driverManager = new EdgerDriverManager();
                  break;
 
+            case OPERA:
+                 driverManager = new OperaDriverManager();
+                 break;
+
                 default:
                 System.out.println("Invalid browse selected");
                 break;

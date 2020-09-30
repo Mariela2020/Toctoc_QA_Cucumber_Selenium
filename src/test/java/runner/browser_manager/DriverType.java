@@ -6,5 +6,6 @@ public enum DriverType {
     FIREFOX,
     EXPLORER,
     EDGER,
+    OPERA,
 
 }

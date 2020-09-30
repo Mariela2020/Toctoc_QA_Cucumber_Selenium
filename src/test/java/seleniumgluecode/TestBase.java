@@ -16,4 +16,5 @@ public class TestBase {
     protected DatosContratoPlan datosContratoPlan = PageFactory.initElements(driver, DatosContratoPlan.class);
     protected DetalleContratoPlan detalleContratoPlan = PageFactory.initElements(driver, DetalleContratoPlan.class);
    // protected DetallePagoPage detallePagoPage = PageFactory.initElements(driver, DetallePagoPage.class);
+    protected RegistroPagePlan registroPagePlan = PageFactory.initElements(driver, RegistroPagePlan.class);
 }
