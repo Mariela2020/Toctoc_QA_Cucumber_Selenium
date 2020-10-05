@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="Proyecto Idea" />
         <module name="Toctoc_QA_Cucumber_Selenium" />
+        <module name="Toctoc_QA_Gestion_Corredor" />
       </profile>
     </annotationProcessing>
   </component>
