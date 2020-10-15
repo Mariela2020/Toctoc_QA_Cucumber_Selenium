@@ -12,7 +12,7 @@ import org.junit.runner.RunWith;
                  glue = ("seleniumgluecode"),
                  plugin = {"json:test/report/cucumber_report.json"},
                  snippets = SnippetType.CAMELCASE,
-                 tags = {"@browser"}
+                 tags = {"@funtional"}
 
 )
 
