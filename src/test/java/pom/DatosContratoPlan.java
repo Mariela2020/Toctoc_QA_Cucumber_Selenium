@@ -85,6 +85,9 @@ public class DatosContratoPlan extends BasePage{
     @FindBy (xpath = "//*[@id=\"datosFactura\"]/div[4]/div/button[2]")
     private WebElement botonenviar;
 
+  //  public boolean isImagenDisplayed4() throws Exception {
+  //      return this.isDisplayed(titleingresodatos) && this.getTitle().equals(titlePage8);
+   // }
 
     public boolean isImagenDisplayed8() throws Exception {
         return this.isDisplayed(pasounodetres) && this.getTitle().equals(titlePage33);
