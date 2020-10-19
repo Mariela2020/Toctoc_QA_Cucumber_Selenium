@@ -30,7 +30,7 @@ public class DetalleContratoPage extends BasePage {
         String filepath = "src/test/resources/filepath/Test2.xlsx";
         String date = getDate();
         String resultText= getText(resultotaltext);
-        //System.out.println("El valor total es:" + resultText);
+        System.out.println("El valor total es:" + resultText);
         readExcel(filepath, "Hoja1");
         writeExcel(filepath,"Hoja1", resultText + " " + date);
         readExcel(filepath,"Hoja1");
