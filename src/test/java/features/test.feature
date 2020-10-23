@@ -23,7 +23,7 @@ Feature: Catalogo de Productos y Planes
     Then Se debe redireccionar a la página para ingresar los datos del contrato
 
 
-  @producto
+  @product
   Scenario: Scenario3: El usuario corredor completa los datos del contrato
     Given Se llena el primer formulario con los campos solicitados
           And Se llena el segundo formulario con los datos solicitados
@@ -44,9 +44,9 @@ Feature: Catalogo de Productos y Planes
 
 
 
-  #@browser
-  #Scenario: Scenario5: Ingresar al catologo de planes en la página Gestion Corredor
-  #   Given El usuario se encuentra en la página de Gestion Corredor
+ # @browser
+ #  Scenario: Scenario5: Ingresar al catologo de planes en la página Gestion Corredor
+ #    Given El usuario se encuentra en la página de Gestion Corredor
   #      And Hace click sobre el botón Ver Planes
   #      And Visualiza la información del plan seleccionado
   #      And Darle click al botón Contratar

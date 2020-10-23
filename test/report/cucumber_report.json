@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 8223227000,
+              "duration": 8711164600,
               "status": "passed"
             },
             "match": {
@@ -18,23 +18,12 @@
         "name": "Scenario1: Ingresar al catologo de productos en la página Gestión Corredor",
         "description": "",
         "id": "catalogo-de-productos-y-planes;scenario1:-ingresar-al-catologo-de-productos-en-la-página-gestión-corredor",
-        "after": [
-          {
-            "result": {
-              "duration": 91800,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.tearDown(Scenario)"
-            }
-          }
-        ],
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 211489900,
+              "duration": 176020600,
               "status": "passed"
             },
             "line": 8,
@@ -46,7 +35,7 @@
           },
           {
             "result": {
-              "duration": 159581300,
+              "duration": 380210300,
               "status": "passed"
             },
             "line": 9,
@@ -58,7 +47,7 @@
           },
           {
             "result": {
-              "duration": 1036570300,
+              "duration": 1039280000,
               "status": "passed"
             },
             "line": 10,
@@ -70,7 +59,7 @@
           },
           {
             "result": {
-              "duration": 74087200,
+              "duration": 244951500,
               "status": "passed"
             },
             "line": 11,
@@ -82,7 +71,7 @@
           },
           {
             "result": {
-              "duration": 41676700,
+              "duration": 29769700,
               "status": "passed"
             },
             "line": 12,
@@ -94,7 +83,7 @@
           },
           {
             "result": {
-              "duration": 2083274300,
+              "duration": 2894961600,
               "status": "passed"
             },
             "line": 13,
@@ -106,7 +95,7 @@
           },
           {
             "result": {
-              "duration": 78692000,
+              "duration": 43133400,
               "status": "passed"
             },
             "line": 14,
@@ -134,7 +123,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1473800,
+              "duration": 1140000,
               "status": "passed"
             },
             "line": 19,
@@ -146,7 +135,7 @@
           },
           {
             "result": {
-              "duration": 1159143600,
+              "duration": 1150640400,
               "status": "passed"
             },
             "line": 20,
@@ -158,7 +147,7 @@
           },
           {
             "result": {
-              "duration": 3097139800,
+              "duration": 3085569800,
               "status": "passed"
             },
             "line": 21,
@@ -170,7 +159,7 @@
           },
           {
             "result": {
-              "duration": 48578100,
+              "duration": 236825000,
               "status": "passed"
             },
             "line": 22,
@@ -182,7 +171,7 @@
           },
           {
             "result": {
-              "duration": 1515291500,
+              "duration": 1295967000,
               "status": "passed"
             },
             "line": 23,
@@ -205,12 +194,23 @@
         "name": "Scenario3: El usuario corredor completa los datos del contrato",
         "description": "",
         "id": "catalogo-de-productos-y-planes;scenario3:-el-usuario-corredor-completa-los-datos-del-contrato",
+        "after": [
+          {
+            "result": {
+              "duration": 58800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 1889792900,
+              "duration": 2038238200,
               "status": "passed"
             },
             "line": 28,
@@ -222,7 +222,7 @@
           },
           {
             "result": {
-              "duration": 1443818700,
+              "duration": 1005651200,
               "status": "passed"
             },
             "line": 29,
@@ -234,7 +234,7 @@
           },
           {
             "result": {
-              "duration": 2123880500,
+              "duration": 2674311100,
               "status": "passed"
             },
             "line": 30,
@@ -246,7 +246,7 @@
           },
           {
             "result": {
-              "duration": 2112320400,
+              "duration": 2664198500,
               "status": "passed"
             },
             "line": 31,
@@ -258,7 +258,7 @@
           },
           {
             "result": {
-              "duration": 57200,
+              "duration": 89800,
               "status": "passed"
             },
             "line": 32,
@@ -270,7 +270,7 @@
           },
           {
             "result": {
-              "duration": 62375600,
+              "duration": 237888700,
               "status": "passed"
             },
             "line": 33,
@@ -282,7 +282,7 @@
           },
           {
             "result": {
-              "duration": 6654973700,
+              "duration": 10375557500,
               "status": "passed"
             },
             "line": 34,
@@ -296,7 +296,7 @@
         "tags": [
           {
             "line": 26,
-            "name": "@producto"
+            "name": "@product"
           }
         ]
       }
