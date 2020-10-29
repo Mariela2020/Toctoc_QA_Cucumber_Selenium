@@ -3,10 +3,15 @@ package pom;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import utils.LogHelper;
+
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class DetalleContratoPage extends BasePage {
 
-     public DetalleContratoPage(WebDriver driver) {
+    private static final Logger LOGGER = LogHelper.getLogger(DetalleContratoPage.class);
+    public DetalleContratoPage(WebDriver driver) {
         super(driver);
     }
 
@@ -30,7 +35,7 @@ public class DetalleContratoPage extends BasePage {
         String filepath = "src/test/resources/filepath/Test2.xlsx";
         String date = getDate();
         String resultText= getText(resultotaltext);
-        System.out.println("El valor total es:" + resultText);
+        LOGGER.log(Level.INFO, "El valor total es:" + resultText);
         readExcel(filepath, "Hoja1");
         writeExcel(filepath,"Hoja1", resultText + " " + date);
         readExcel(filepath,"Hoja1");

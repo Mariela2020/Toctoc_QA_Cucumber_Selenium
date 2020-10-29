@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 8711164600,
+              "duration": 9410730400,
               "status": "passed"
             },
             "match": {
@@ -15,189 +15,13 @@
           }
         ],
         "line": 7,
-        "name": "Scenario1: Ingresar al catologo de productos en la página Gestión Corredor",
+        "name": "Ingresar al catologo de planes en la página Gestion Corredor",
         "description": "",
-        "id": "catalogo-de-productos-y-planes;scenario1:-ingresar-al-catologo-de-productos-en-la-página-gestión-corredor",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 176020600,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "El usuario se encuentra en la página de Gestión Corredor",
-            "match": {
-              "location": "Test.elUsuarioSeEncuentraEnLaPáginaDeGestiónCorredor()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 380210300,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "Hace click sobre el botón Productos Marketing",
-            "match": {
-              "location": "Test.haceClickSobreElBotónProductosMarketing()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 1039280000,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "Se debe redireccionar a la página productos",
-            "match": {
-              "location": "Test.seDebeRedireccionarALaPáginaProductos()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 244951500,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "Hace click sobre la tarjeta del producto a contratar",
-            "match": {
-              "location": "Test.haceClickSobreLaTarjetaDelProductoAContratar()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 29769700,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "Visualiza la información del producto seleccionado",
-            "match": {
-              "location": "Test.visualizaLaInformaciónDelProductoSeleccionado()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2894961600,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "Hacer click al botón Comprar",
-            "match": {
-              "location": "Test.darleClickAlBotónComprar()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 43133400,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "Se debe redireccionar a la página de login",
-            "match": {
-              "location": "Test.seDebeRedireccionarALaPáginaDeLogin()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "line": 6,
-            "name": "@browser"
-          }
-        ]
-      },
-      {
-        "line": 18,
-        "name": "Scenario2: El usuario corredor sea válido",
-        "description": "",
-        "id": "catalogo-de-productos-y-planes;scenario2:-el-usuario-corredor-sea-válido",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 1140000,
-              "status": "passed"
-            },
-            "line": 19,
-            "name": "Hay un usuario corredor que quiere logiarse con el fin de contratar un producto",
-            "match": {
-              "location": "Test.hayUnUsuarioCorredoraQueQuiereLogiaseConElFinDeContratarUnProducto()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 1150640400,
-              "status": "passed"
-            },
-            "line": 20,
-            "name": "Ingresa el nombre del email del usuario corredor",
-            "match": {
-              "location": "Test.ingresaElNombreDelEmailDelUsuarioCorredor()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 3085569800,
-              "status": "passed"
-            },
-            "line": 21,
-            "name": "Ingresa la contraseña",
-            "match": {
-              "location": "Test.ingresaLaContraseña()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 236825000,
-              "status": "passed"
-            },
-            "line": 22,
-            "name": "Cuando el usuario ingrese la información requerida válida",
-            "match": {
-              "location": "Test.cuandoElUsuarioIngreseLaInformaciónRequeridaVálidaParaLogiarse()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 1295967000,
-              "status": "passed"
-            },
-            "line": 23,
-            "name": "Se debe redireccionar a la página para ingresar los datos del contrato",
-            "match": {
-              "location": "Test.seDebeRedireccionarALaPáginaParaIngresarLosDatosDelContrato()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "line": 17,
-            "name": "@login"
-          }
-        ]
-      },
-      {
-        "line": 27,
-        "name": "Scenario3: El usuario corredor completa los datos del contrato",
-        "description": "",
-        "id": "catalogo-de-productos-y-planes;scenario3:-el-usuario-corredor-completa-los-datos-del-contrato",
+        "id": "catalogo-de-planes;ingresar-al-catologo-de-planes-en-la-página-gestion-corredor",
         "after": [
           {
             "result": {
-              "duration": 58800,
+              "duration": 627730600,
               "status": "passed"
             },
             "match": {
@@ -210,34 +34,256 @@
         "steps": [
           {
             "result": {
-              "duration": 2038238200,
+              "duration": 184157200,
               "status": "passed"
             },
-            "line": 28,
-            "name": "Se llena el primer formulario con los campos solicitados",
+            "line": 8,
+            "name": "El usuario se encuentra en la página de Gestion Corredor",
             "match": {
-              "location": "Test.seLlenaElPrimerFormularioConLosCamposSolicitados()"
+              "location": "Test.elUsuarioSeEncuentraEnLaPáginaDeGestionCorredor()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 1005651200,
+              "duration": 64575700,
               "status": "passed"
             },
-            "line": 29,
-            "name": "Se llena el segundo formulario con los datos solicitados",
+            "line": 9,
+            "name": "Hace click sobre el botón Ver Planes",
             "match": {
-              "location": "Test.seLlenaElSegundoFormularioConLosDatosSolicitados()"
+              "location": "Test.haceClickSobreElBotónVerPlanes()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 2674311100,
+              "duration": 725787000,
               "status": "passed"
             },
-            "line": 30,
+            "line": 10,
+            "name": "Visualiza la información del plan seleccionado y hace click al botón Contratar",
+            "match": {
+              "location": "Test.visualizaLaInformaciónDelPlanSeleccionadoYHaceClickAlBotónContratar()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2692860100,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Registrar Usuario",
+            "match": {
+              "location": "Test.registrarUsuario()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4468175600,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Llena los formularios con los campos solicitados",
+            "match": {
+              "location": "Test.llenaLosFormulariosConLosCamposSolicitados()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 53772400,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Tilda el checkbox Declaro conocer y aceptar los Términos y condiciones de TOCTOC del Plan",
+            "match": {
+              "location": "Test.tildaElCheckboxDeclaroConocerYAceptarLosTérminosYCondicionesDeTOCTOCDelPlan()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 67411000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Darle click al boton Enviar",
+            "match": {
+              "location": "Test.darleClickAlBotonEnviar()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 40300,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Se debe redireccionar a la página Detalle del contrato del plan a contratar",
+            "match": {
+              "location": "Test.seDebeRedireccionarALaPáginaDetalleDelContratoDelPlanAContratar()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 6,
+            "name": "@browser"
+          }
+        ]
+      }
+    ],
+    "name": "Catalogo de Planes",
+    "description": "Como usuario quiero visualizar los planes para contratar un servicio.",
+    "id": "catalogo-de-planes",
+    "keyword": "Feature",
+    "uri": "test.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@planes"
+      }
+    ]
+  },
+  {
+    "line": 3,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 7690829800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setup()"
+            }
+          }
+        ],
+        "line": 7,
+        "name": "Ingresar al catologo de productos Markenting en la página Gestión Corredor y Contratar un servicio",
+        "description": "",
+        "id": "catalogo-de-productos-marketing;ingresar-al-catologo-de-productos-markenting-en-la-página-gestión-corredor-y-contratar-un-servicio",
+        "after": [
+          {
+            "result": {
+              "duration": 656801700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 173701100,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "El usuario se encuentra en la página de Gestión Corredor y Hace click sobre el botón Productos Marketing",
+            "match": {
+              "location": "Test.elUsuarioSeEncuentraEnLaPáginaDeGestiónCorredorYHaceClickSobreElBotónProductosMarketing()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1040009400,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Se debe redireccionar a la página productos",
+            "match": {
+              "location": "Test.seDebeRedireccionarALaPáginaProductos()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 88295700,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Hace click sobre la tarjeta del producto a contratar",
+            "match": {
+              "location": "Test.haceClickSobreLaTarjetaDelProductoAContratar()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1886247000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Visualiza la información del producto seleccionado, se Hacer click al botón Comprar",
+            "match": {
+              "location": "Test.visualizaLaInformaciónDelProductoSeleccionadoSeHacerClickAlBotónComprar()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 93008800,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Se debe redireccionar a la página de login",
+            "match": {
+              "location": "Test.seDebeRedireccionarALaPáginaDeLogin()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4268825900,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Ingresa los credenciales del usuario corredor",
+            "match": {
+              "location": "Test.ingresaLosCredencialesDelUsuarioCorredor()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1218038300,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Cuando el usuario ingrese la información requerida válida",
+            "match": {
+              "location": "Test.cuandoElUsuarioIngreseLaInformaciónRequeridaVálidaParaLogiarse()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3429892400,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Se llena los formularios con los campos solicitados",
+            "match": {
+              "location": "Test.seLlenaLosFormulariosConLosCamposSolicitados()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2129272800,
+              "status": "passed"
+            },
+            "line": 16,
             "name": "Tilda el checkbox Declaro conocer y aceptar los Términos y condiciones de TOCTOC",
             "match": {
               "location": "Test.tildaElCheckboxDeclaroConocerYAceptarLosTérminosYCondicionesDeTOCTOC()"
@@ -246,10 +292,10 @@
           },
           {
             "result": {
-              "duration": 2664198500,
+              "duration": 2128013100,
               "status": "passed"
             },
-            "line": 31,
+            "line": 17,
             "name": "Tilda el checkbox Actualizar la información ingresada",
             "match": {
               "location": "Test.tildaElCheckboxActualizarLaInformaciónIngresada()"
@@ -258,22 +304,10 @@
           },
           {
             "result": {
-              "duration": 89800,
+              "duration": 79139900,
               "status": "passed"
             },
-            "line": 32,
-            "name": "Cuando el usuario corredor rellena todos los datos solicitados",
-            "match": {
-              "location": "Test.cuandoElUsuarioCorredorRellenaTodosLosDatosSolicitados()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 237888700,
-              "status": "passed"
-            },
-            "line": 33,
+            "line": 18,
             "name": "Hace click al botón Enviar",
             "match": {
               "location": "Test.darleClickAlBotónEnviar()"
@@ -282,34 +316,34 @@
           },
           {
             "result": {
-              "duration": 10375557500,
+              "duration": 7884564300,
               "status": "passed"
             },
-            "line": 34,
-            "name": "Se debe redireccionar a la página Detalle del contrato",
+            "line": 19,
+            "name": "Se debe redireccionar a la página Detalle del contrato y visualizar medio de pago disponibles",
             "match": {
-              "location": "Test.seDebeRedireccionarALaPáginaDetalleDelContrato()"
+              "location": "Test.seDebeRedireccionarALaPáginaDetalleDelContratoYVisualizarMedioDePagoDisponibles()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "line": 26,
-            "name": "@product"
+            "line": 6,
+            "name": "@browser"
           }
         ]
       }
     ],
-    "name": "Catalogo de Productos y Planes",
-    "description": "Como usuario quiero visualizar los productos y planes para contratar un servicio.",
-    "id": "catalogo-de-productos-y-planes",
+    "name": "Catalogo de Productos Marketing",
+    "description": "Como usuario quiero contratar un servicio de un Producto Marketing.",
+    "id": "catalogo-de-productos-marketing",
     "keyword": "Feature",
-    "uri": "test.feature",
+    "uri": "test.producto.feature",
     "tags": [
       {
         "line": 1,
-        "name": "@funtional"
+        "name": "@producto"
       }
     ]
   }

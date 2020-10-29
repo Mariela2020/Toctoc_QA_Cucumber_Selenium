@@ -1,10 +1,14 @@
 package runner.browser_manager;
 
 
+import java.util.Properties;
+
 public class DriverManagerFactory {
 
-    public static DriverManager getManager(DriverType type){
+   // public static DriverManager getManager(DriverType type){
 
+
+    public static DriverManager getManager(DriverType type){
         DriverManager driverManager = null;
 
         switch (type){

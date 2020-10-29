@@ -7,5 +7,9 @@ public enum DriverType {
     EXPLORER,
     EDGER,
     OPERA,
+    driverManager_type,
+    ;
+
+
 
 }

@@ -9,8 +9,13 @@ import org.openqa.selenium.WebDriver;
 import runner.browser_manager.DriverManager;
 import runner.browser_manager.DriverManagerFactory;
 import runner.browser_manager.DriverType;
-
+import utils.LogHelper;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.Properties;
 import java.util.concurrent.TimeUnit;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 
 public class Hooks {
@@ -18,32 +23,36 @@ public class Hooks {
     private static WebDriver driver;
     private static int numerOfCase = 0;
     private DriverManager driverManager;
+    private static final Logger LOGGER = LogHelper.getLogger(Hooks.class);
 
     @Before("@browser")
-    public void setup(){
+    public void setup() throws IOException {
+
         numerOfCase ++;
-        System.out.println("Se esta ejecutando el escenario nro: " + numerOfCase);
-        driverManager = DriverManagerFactory.getManager(DriverType.FIREFOX);
+        LOGGER.log(Level.INFO, "Generando reporte...");
+        Properties properties = new Properties();
+        properties.load(new FileReader("src/test/resources/config.properties"));
+        driverManager = DriverManagerFactory.getManager(DriverType.valueOf(properties.getProperty("driverManager_type")));
+        //driverManager = DriverManagerFactory.getManager(DriverType.CHROME);
+        LOGGER.log(Level.INFO, "Test run:" + driverManager);
         driver = driverManager.getDriver();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        driver.get("https://ww2.toctoc.com/gestioncorredor/");
+        driver.get(properties.getProperty("url_base"));
         driver.manage().window().maximize();
     }
 
-    @After("@product")
+    @After("@browser")
     public void tearDown(Scenario scenario){
-        if(scenario.isFailed()) {
+         if(scenario.isFailed()) {
             byte[] screenshot = ((TakesScreenshot) driverManager.getDriver()).getScreenshotAs(OutputType.BYTES);
             scenario.embed(screenshot, "image/png");
         }
-            //System.out.println("El escenario nro; " + numerOfCase + " se ejecuto correctamente.");
-            //driverManager.quitDriver();
-
+           LOGGER.log(Level.INFO, "El escenario nro; " + numerOfCase + " se ejecuto correctamente.");
+           driverManager.quitDriver();
     }
 
     public static WebDriver getDriver(){
         return driver;
-
     }
 
 
