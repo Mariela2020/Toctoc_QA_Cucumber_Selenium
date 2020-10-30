@@ -37,7 +37,7 @@ public class Hooks {
         LOGGER.log(Level.INFO, "Test run:" + driverManager);
         driver = driverManager.getDriver();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        driver.get(properties.getProperty("url_base"));
+        driver.get("https://ww2.toctoc.com/gestioncorredor/");
         driver.manage().window().maximize();
     }
 
