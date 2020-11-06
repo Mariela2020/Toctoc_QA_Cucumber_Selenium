@@ -1,6 +1,7 @@
 package pom;
 
 
+import org.apache.xmlbeans.impl.xb.xsdschema.FieldDocument;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -15,6 +16,7 @@ public class DatosContratoPage extends BasePage{
     }
 
     @FindBy(css = "#payFormProduct > div > div.row.title.d-flex.justify-content-between > h3:nth-child(1)")
+    //@FindBy (xpath = "//*[@id='app']/div/div[4]/section/div/div[1]/h3[2]")
     private WebElement titleingresodatos;
     private String titlePage8 = "TOCTOC.com Gestión Corredoras";
 
