@@ -7,7 +7,7 @@ import org.openqa.selenium.support.FindBy;
 
 public class LoginPage extends BasePage{
 
-    @FindBy(css = "#app > div > div > div.row.align-self-center > div.col-md.col-sm-6 > div:nth-child(1) > h3")
+    @FindBy(xpath = "//*[@id=\'app\']/div/div/div[1]/img")
     private WebElement registerPageLocator;
     private String titlePage7 = "TOCTOC.com Gestión Corredoras";
 
@@ -17,7 +17,8 @@ public class LoginPage extends BasePage{
     @FindBy(name ="password")
     private By passwordLocator;
 
-    @FindBy(xpath = "//*[@id=\"loginForm\"]/button")
+    @FindBy(xpath = "//*[@id='loginForm']/div[4]/button")
+    //@FindBy(xpath = "//*[@id=\"loginForm\"]/button")
     private WebElement btningresar;
 
     public LoginPage(WebDriver driver) {
