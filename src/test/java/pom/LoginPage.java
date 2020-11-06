@@ -18,7 +18,6 @@ public class LoginPage extends BasePage{
     private By passwordLocator;
 
     @FindBy(xpath = "//*[@id='loginForm']/div[4]/button")
-    //@FindBy(xpath = "//*[@id=\"loginForm\"]/button")
     private WebElement btningresar;
 
     public LoginPage(WebDriver driver) {
