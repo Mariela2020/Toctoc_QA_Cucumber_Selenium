@@ -12,7 +12,11 @@ public class DetallePagoPage extends BasePage {
 
     @FindBy (xpath = "//*[@id=\"root\"]/div/div/div/div/div[2]/div[2]/h1")
     private WebElement titledetallepago;
-    private String titlePage27 = "Pago de servicios";
+    private String titlePage6 = "Pago de servicios";
+
+    @FindBy(xpath = "//*[@id=\"root\"]/div/div/div/div/div[2]/div[2]/h1")
+    private WebElement titledetallepagoplan;
+    private String titlePage7 = "Pago de servicios";
 
     @FindBy (xpath = "//*[@id=\"root\"]/div/div/div/div/div[2]/div[2]/div[3]/div/div[1]/p")
     private WebElement tcredito;
@@ -23,9 +27,14 @@ public class DetallePagoPage extends BasePage {
     @FindBy (xpath = "//*[@id=\"root\"]/div/div/div/div/div[2]/div[2]/div[3]/div/div[3]/p")
     private WebElement transferencia;
 
-    public boolean istitledetallepagoDisplayed() throws Exception {
+    public boolean istitledetallepagoDisplayed3() throws Exception {
         //Thread.sleep(2000);
-        return this.isDisplayed(titledetallepago) && this.getTitle().equals(titlePage27);
+        return this.isDisplayed(titledetallepago) && this.getTitle().equals(titlePage6);
+    }
+
+    public boolean istitledetallepagoDisplayed4() throws Exception {
+        Thread.sleep(2000);
+        return this.isDisplayed(titledetallepago) && this.getTitle().equals(titlePage7);
     }
 
     public void ClickOnbformapago() throws Exception {

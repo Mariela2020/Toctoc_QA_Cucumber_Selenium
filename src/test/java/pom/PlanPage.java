@@ -11,16 +11,12 @@ public class PlanPage extends BasePage {
     }
 
 
-    @FindBy (xpath = "//*[@id=\"planes\"]")
+    @FindBy (xpath="//*[@id=\"planes\"]/div[2]/div/div[2]/div[1]/div/div[1]/div[1]/h4")
     private WebElement tituloplanes;
     private String titlePage30 = "TOCTOC.com - Gestión corredor - Planes de publicación";
 
-    @FindBy (xpath = "/html/body/div[1]/div/div[3]/section[2]/div/div/div[2]/h3")
+    @FindBy (name ="inicia")
     private WebElement planseleccionado;
-
-    @FindBy (xpath = "//*[@id=\"planes\"]/div/div/div[4]/ul/li[9]/button")
-    private WebElement botoncontratar;
-
 
     public boolean isImagenDisplayed6() throws Exception {
         return this.isDisplayed(tituloplanes) && this.getTitle().equals(titlePage30);
@@ -30,14 +26,6 @@ public class PlanPage extends BasePage {
         //Thread.sleep(2000);
         this.click(planseleccionado);
     }
-
-  //  public boolean isImagenDisplayed7() throws Exception {
-  //      return this.isDisplayed(tituloplanes) && this.getTitle().equals(titlePage30);
-  //  }
-
-  //  public void ClickOnCoontratar() throws Exception {
-  //      this.click(botoncontratar);
-  //  }
 
 
 

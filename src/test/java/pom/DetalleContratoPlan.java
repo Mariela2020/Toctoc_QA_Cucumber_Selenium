@@ -4,44 +4,65 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import utils.LogHelper;
+
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class DetalleContratoPlan extends BasePage{
 
-    private WebDriver driver;
+    private static final Logger LOGGER = LogHelper.getLogger(DetalleContratoPlan.class);
 
     public DetalleContratoPlan(WebDriver driver) {
         super(driver);
     }
 
-    @FindBy(id = "//*[@id=\\\"app\\\"]/div/div[4]/section/div/div[1]/h3[2]")
-    private By pasotresdetres;
+    //@FindBy(linkText = "verDetalle")
+    @FindBy(xpath="//*[@id=\"verDetalle\"]")
+    private WebElement linkverdetalle;
 
     //@FindBy (css ="div.row:nth-child(1) > h3:nth-child(1)")
-    @FindBy (xpath = "/html/body/div/div/div[4]/section/div/div[1]/h3[1]")
+    @FindBy (xpath = "//*[@id=\"app\"]/div/div[4]/section/div/div[1]/h3[1]")
     private WebElement detallecontrato;
-    private String titlePage59 = "TOCTOC.com Gestión Corredoras";
+    private String titlePage5 = "TOCTOC.com Gestión Corredoras";
 
-    @FindBy (css = ".modal-header > h3")
-    private WebElement mensaje;
+    @FindBy (xpath="//*[@id=\"app\"]/div/div[4]/section/div/div[4]/div[4]/div/div[2]/span")
+    private WebElement resultotaltext1;
 
-    @FindBy (className = "btn btn-danger button-comprar")
-    private WebElement btnAcepatar;
+       @FindBy (xpath = "/html/body/div[3]/div/div/div[3]/a")
+    private WebElement btnmensaje;
+
+    @FindBy (xpath = "//*[@id=\"app\"]/div/div[4]/section/div/div[5]/div/a")
+    private WebElement btnpagarplan;
 
 
     public boolean istitledetalleDisplayed9() throws Exception {
-         Thread.sleep(5000);
-         //driver.switchTo().frame("_hjRemoteVarsFrame");
-         //WebDriverWait wait = new WebDriverWait(driver, 10);
-         //WebElement detallecontrato;
-         // detallecontrato = wait.<org.openqa.selenium.WebElement>until(ExpectedConditions.presenceOfElementLocated(By.xpath("/html/body/div/div/div[4]/section/div/div[1]/h3[1]")));
+         Thread.sleep(2000);
+         return this.isDisplayed(detallecontrato) && this.getTitle().equals(titlePage5);
+         }
 
-        //assert detallecontrato.isDisplayed();
-        return this.isDisplayed(detallecontrato) && this.getTitle().equals(titlePage59);
-        // return this.isDisplayed(detallecontrato);
+    public void ClickOnlinkverdetalle() throws Exception {
+        Thread.sleep(2000);
+        this.click(linkverdetalle);
     }
 
-  // public void ClickOnbtnPagar() throws Exception {
-    //    this.click(btnPagar);  selector boton pagar .btn > span
- //  }
+    public void WriteExcelFile1() throws Exception {
+        String filepath = "src/test/resources/filepath/Test2.xlsx";
+        String date = getDate();
+        String resultText= getText(resultotaltext1);
+        LOGGER.log(Level.INFO, "El valor total del Plan es:" + resultText);
+        readExcel(filepath, "Hoja1");
+        writeExcel(filepath,"Hoja1", resultText + " " + date);
+        readExcel(filepath,"Hoja1");
+    }
+
+    public void ClickOnbtnPagar() throws Exception {
+        Thread.sleep(2000);
+        this.click(btnpagarplan);
+     }
+
+    public void ClickOnbtnmensaje() throws Exception {
+        this.click(btnmensaje);
+    }
 
 }

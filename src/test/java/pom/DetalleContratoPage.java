@@ -19,8 +19,9 @@ public class DetalleContratoPage extends BasePage {
     private WebElement titledetalleContrato;
     private String titlePage26 = "TOCTOC.com Gestión Corredoras";
 
-    @FindBy (xpath = "//*[@id='app']/div/div[4]/section/div/div[3]/div[2]/table/tr[9]/td")
-    //@FindBy (css = "#app > div > div.pago__Productos__Extra__detalle.contenedor-padre > section > div > div:nth-child(3) > div:nth-child(2) > table > tr:nth-child(7) > td")
+
+    //@FindBy (xpath = "//*[@id='app']/div/div[4]/section/div/div[3]/div[2]/table/tr[9]/td")
+    @FindBy (css = "#app > div > div.pago__Productos__Extra__detalle.contenedor-padre > section > div > div:nth-child(3) > div:nth-child(2) > table > tr:nth-child(7) > td")
     private WebElement resultotaltext;
 
     @FindBy (xpath = "//*[@id=\"app\"]/div/div[4]/section/div/div[4]/div/a")
@@ -35,7 +36,7 @@ public class DetalleContratoPage extends BasePage {
         String filepath = "src/test/resources/filepath/Test2.xlsx";
         String date = getDate();
         String resultText= getText(resultotaltext);
-        LOGGER.log(Level.INFO, "El valor total es:" + resultText);
+        LOGGER.log(Level.INFO, "El valor total del Producto es:" + resultText);
         readExcel(filepath, "Hoja1");
         writeExcel(filepath,"Hoja1", resultText + " " + date);
         readExcel(filepath,"Hoja1");
