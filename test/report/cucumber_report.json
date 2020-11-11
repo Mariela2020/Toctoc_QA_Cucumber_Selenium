@@ -6,157 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 11517512400,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.setup()"
-            }
-          }
-        ],
-        "line": 7,
-        "name": "Ingresar al catologo de planes en la página Gestion Corredor",
-        "description": "",
-        "id": "catalogo-de-planes;ingresar-al-catologo-de-planes-en-la-página-gestion-corredor",
-        "after": [
-          {
-            "result": {
-              "duration": 325800,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.tearDown(Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 180858800,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "El usuario se encuentra en la página de Gestion Corredor",
-            "match": {
-              "location": "Test.elUsuarioSeEncuentraEnLaPáginaDeGestionCorredor()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 42257500,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "Hace click sobre el botón Ver Planes",
-            "match": {
-              "location": "Test.haceClickSobreElBotónVerPlanes()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 907035900,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "Visualiza la información del plan seleccionado y hace click al botón Contratar",
-            "match": {
-              "location": "Test.visualizaLaInformaciónDelPlanSeleccionadoYHaceClickAlBotónContratar()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2481772400,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "Registrar Usuario",
-            "match": {
-              "location": "Test.registrarUsuario()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 3816516000,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "Llena los formularios con los campos solicitados",
-            "match": {
-              "location": "Test.llenaLosFormulariosConLosCamposSolicitados()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 49782800,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "Tilda el checkbox Declaro conocer y aceptar los Términos y condiciones de TOCTOC del Plan",
-            "match": {
-              "location": "Test.tildaElCheckboxDeclaroConocerYAceptarLosTérminosYCondicionesDeTOCTOCDelPlan()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 57825100,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "Darle click al boton Enviar",
-            "match": {
-              "location": "Test.darleClickAlBotonEnviar()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 14615753300,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "Se debe redireccionar a la página Detalle del contrato del plan a contratar",
-            "match": {
-              "location": "Test.seDebeRedireccionarALaPáginaDetalleDelContratoDelPlanAContratar()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "line": 6,
-            "name": "@browser"
-          }
-        ]
-      }
-    ],
-    "name": "Catalogo de Planes",
-    "description": "Como usuario quiero visualizar los planes para contratar un servicio.",
-    "id": "catalogo-de-planes",
-    "keyword": "Feature",
-    "uri": "test.feature",
-    "tags": [
-      {
-        "line": 1,
-        "name": "@planes"
-      }
-    ]
-  },
-  {
-    "line": 3,
-    "elements": [
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 13536721300,
+              "duration": 16032890400,
               "status": "passed"
             },
             "match": {
@@ -171,7 +21,7 @@
         "after": [
           {
             "result": {
-              "duration": 1571100,
+              "duration": 896324400,
               "status": "passed"
             },
             "match": {
@@ -184,7 +34,7 @@
         "steps": [
           {
             "result": {
-              "duration": 97344000,
+              "duration": 868294800,
               "status": "passed"
             },
             "line": 8,
@@ -196,7 +46,7 @@
           },
           {
             "result": {
-              "duration": 1030049700,
+              "duration": 1096028200,
               "status": "passed"
             },
             "line": 9,
@@ -208,7 +58,7 @@
           },
           {
             "result": {
-              "duration": 59401500,
+              "duration": 2274869400,
               "status": "passed"
             },
             "line": 10,
@@ -220,7 +70,7 @@
           },
           {
             "result": {
-              "duration": 2578537500,
+              "duration": 4032448500,
               "status": "passed"
             },
             "line": 11,
@@ -232,7 +82,7 @@
           },
           {
             "result": {
-              "duration": 2802051400,
+              "duration": 5125717800,
               "status": "passed"
             },
             "line": 12,
@@ -244,7 +94,7 @@
           },
           {
             "result": {
-              "duration": 4216723500,
+              "duration": 3906386700,
               "status": "passed"
             },
             "line": 13,
@@ -256,7 +106,7 @@
           },
           {
             "result": {
-              "duration": 3722882800,
+              "duration": 4493000900,
               "status": "passed"
             },
             "line": 14,
@@ -268,7 +118,7 @@
           },
           {
             "result": {
-              "duration": 2965177200,
+              "duration": 8867276200,
               "status": "passed"
             },
             "line": 15,
@@ -280,7 +130,7 @@
           },
           {
             "result": {
-              "duration": 2110116800,
+              "duration": 2304450700,
               "status": "passed"
             },
             "line": 16,
@@ -292,7 +142,7 @@
           },
           {
             "result": {
-              "duration": 2109001500,
+              "duration": 2467725900,
               "status": "passed"
             },
             "line": 17,
@@ -304,7 +154,7 @@
           },
           {
             "result": {
-              "duration": 51051500,
+              "duration": 230673900,
               "status": "passed"
             },
             "line": 18,
@@ -316,7 +166,7 @@
           },
           {
             "result": {
-              "duration": 8291304300,
+              "duration": 9190387800,
               "status": "passed"
             },
             "line": 19,

@@ -15,9 +15,9 @@ public class DatosContratoPage extends BasePage{
         super(driver);
     }
 
-    @FindBy(css = "#payFormProduct > div > div.row.title.d-flex.justify-content-between > h3:nth-child(1)")
-    //@FindBy (xpath = "//*[@id='app']/div/div[4]/section/div/div[1]/h3[2]")
-    private WebElement titleingresodatos;
+
+    @FindBy(xpath="//*[@id=\"datosFactura\"]/div[1]/h3[2]")
+    private WebElement pasodosdetres;
     private String titlePage8 = "TOCTOC.com Gestión Corredoras";
 
     @FindBy(xpath= "//*[@id=\"payFormProduct\"]/div/div[2]/div/div[1]/span")
@@ -77,18 +77,18 @@ public class DatosContratoPage extends BasePage{
     @FindBy(xpath="//*[@id=\"nextStep\"]")
     private WebElement btnSiguiente;
 
-    @FindBy(xpath = "//*[@id=\"datosFactura\"]/div[1]/h3[2]")
-    private WebElement numeropaso2;
+    @FindBy(xpath = "//*[@id=\"app\"]/div/div[2]/div[2]/div/div[2]/div[3]/a[1]")
+    private WebElement usuariovalidado;
     private String titlePage28 = "TOCTOC.com Gestión Corredoras";
 
 
 
     public boolean isImagenDisplayed4() throws Exception {
-        return this.isDisplayed(titleingresodatos) && this.getTitle().equals(titlePage8);
+        return this.isDisplayed(usuariovalidado) && this.getTitle().equals(titlePage28);
     }
 
     public boolean isImagenDisplayed5() throws Exception {
-        return this.isDisplayed(numeropaso2) && this.getTitle().equals(titlePage28);
+        return this.isDisplayed(pasodosdetres) && this.getTitle().equals(titlePage8);
     }
 
     public void typeDatosContratospaso1() throws Exception {

@@ -17,7 +17,8 @@ public class LoginPage extends BasePage{
     @FindBy(name ="password")
     private By passwordLocator;
 
-    @FindBy(xpath = "//*[@id='loginForm']/div[4]/button")
+    //@FindBy(xpath = "//*[@id='loginForm']/div[4]/button")
+    @FindBy(xpath="//*[@id=\"loginForm\"]/div/div[3]/button/span")
     private WebElement btningresar;
 
     public LoginPage(WebDriver driver) {
@@ -25,6 +26,7 @@ public class LoginPage extends BasePage{
     }
 
     public boolean isImagenDisplayed3() throws Exception {
+        Thread.sleep(5000);
         return this.isDisplayed(registerPageLocator) && this.getTitle().equals(titlePage7);
     }
 
@@ -37,7 +39,7 @@ public class LoginPage extends BasePage{
     public void typePasswordLocator() throws Exception {
 
         clear(" ", By.name("password"));
-        Thread.sleep(3000);
+        Thread.sleep(2000);
        // type("cuchufi",By.name("password"));
         type("prueba",By.name("password"));
     }

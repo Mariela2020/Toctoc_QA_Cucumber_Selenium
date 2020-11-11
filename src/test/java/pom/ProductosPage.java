@@ -12,11 +12,9 @@ public class ProductosPage extends BasePage {
     private String titlePage = "TOCTOC.com - Productos y servicios para Corredores de propiedades";
 
     @FindBy (xpath="//*[@id=\"vitrina_productos\"]/div/button[1]/div[2]/h4")
-    //@FindBy (xpath ="//*[@id=\"vitrina_productos\"]/div/button[13]/div[2]/p[1]")
     private WebElement imagentarjeta;
 
-    //@FindBy (xpath ="//*[@id=\"vitrina_productos\"]/div/button[13]/div[2]/p[1]")
-    @FindBy (xpath="//*[@id=\"vitrina_productos\"]/div/button[1]/div[2]/h4")
+   @FindBy (xpath="//*[@id=\"vitrina_productos\"]/div/button[1]/div[2]/h4")
     private WebElement productolocator;
 
     // @FindBy(linkText = "COMPRAR")
@@ -34,6 +32,7 @@ public class ProductosPage extends BasePage {
     }
 
     public void clickOnTarjetaProducto() throws Exception {
+        Thread.sleep(2000);
         this.click(imagentarjeta);
      }
 
