@@ -20,6 +20,9 @@ public class DatosContratoPlan extends BasePage{
     @FindBy (xpath = "//*[@id=\"datosContrato\"]/div[2]/div[1]/div[2]/input")
     private WebElement radiopersona;
 
+    @FindBy (xpath="//*[@id=\"containFactura\"]/div[1]/span")
+    private WebElement radiofactura;
+
     @FindBy (xpath = "//*[@id=\"containFactura\"]/div[2]/input" )
     private WebElement radioboleta;
 
@@ -95,9 +98,9 @@ public class DatosContratoPlan extends BasePage{
 
 
      public void typeDatosContratosplanpaso1() throws Exception {
-        //this.click(radiofactura);
         Thread.sleep(1000);
         this.click(radiopersona);
+        // this.click(radiofactura);
         this.click(radioboleta);
         //Thread.sleep(1000);
         type("Prueba de Flujo plan", By.id("razonSocial"));

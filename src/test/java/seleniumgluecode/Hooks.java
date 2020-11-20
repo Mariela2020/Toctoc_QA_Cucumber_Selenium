@@ -12,6 +12,7 @@ import runner.browser_manager.DriverType;
 import utils.LogHelper;
 import java.io.FileReader;
 import java.io.IOException;
+import java.net.MalformedURLException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 import java.util.logging.Level;
@@ -37,12 +38,13 @@ public class Hooks {
         LOGGER.log(Level.INFO, "Test run:" + driverManager);
         driver = driverManager.getDriver();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        //driver.navigate().to("https://ww2.toctoc.com/gestioncorredor/");
         driver.get("https://ww2.toctoc.com/gestioncorredor/");
         driver.manage().window().maximize();
     }
 
     @After("@browser")
-    public void tearDown(Scenario scenario){
+    public void tearDown(Scenario scenario)  {
          if(scenario.isFailed()) {
             byte[] screenshot = ((TakesScreenshot) driverManager.getDriver()).getScreenshotAs(OutputType.BYTES);
             scenario.embed(screenshot, "image/png");

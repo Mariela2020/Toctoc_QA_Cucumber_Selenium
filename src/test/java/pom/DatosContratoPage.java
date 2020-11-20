@@ -92,7 +92,7 @@ public class DatosContratoPage extends BasePage{
     }
 
     public void typeDatosContratospaso1() throws Exception {
-        // this.click(radioboleta);
+         //this.click(radioboleta);
         this.click(radiofactura);
         Thread.sleep(1000);
         clear(" ", By.id("razonSocial"));

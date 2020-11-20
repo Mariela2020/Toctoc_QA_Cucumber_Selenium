@@ -1,6 +1,10 @@
 package runner.browser_manager;
 
+
 import org.openqa.selenium.WebDriver;
+
+
+
 
 public abstract class DriverManager {
 
@@ -17,7 +21,7 @@ public abstract class DriverManager {
         }
     }
 
-    public WebDriver getDriver(){
+    public WebDriver getDriver()  {
         if(driver == null) {
             createDriver();
 
