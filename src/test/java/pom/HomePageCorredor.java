@@ -6,13 +6,14 @@ import org.openqa.selenium.support.FindBy;
 
 public class HomePageCorredor extends BasePage{
 
-    //@FindBy(linkText = "Productos Marketing")
+
     @FindBy (xpath = "//*[@id=\"app\"]/div/div[2]/div[3]/div[1]/div/ul/li[3]/a")
     private WebElement botonproductos;
     private String titlePage = "TOCTOC.com - Gestión corredor - Planes de publicación";
 
-    @FindBy (xpath="//*[@id=\"app\"]/div/div[3]/div/div/div/div/button")
-    //@FindBy(linkText = "Ver Planes")
+    //@FindBy (xpath="//*[@id=\"app\"]/div/div[3]/div/div/div/div/button")
+    //@FindBy (xpath = "//*[@id=\"app\"]/div/div[2]/div[3]/div[1]/div/ul/li[3]/a")
+    @FindBy(linkText = "Planes")
     private WebElement botonplanes;
 
 
