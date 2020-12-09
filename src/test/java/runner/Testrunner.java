@@ -18,7 +18,7 @@ import java.util.logging.Logger;
                  glue = ("seleniumgluecode"),
                  plugin = {"json:test/report/cucumber_report.json"},
                  snippets = SnippetType.CAMELCASE,
-                 tags = {"@producto"}
+                 tags = {"@planes, @producto"}
 
 )
 
