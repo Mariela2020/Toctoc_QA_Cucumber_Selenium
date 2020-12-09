@@ -35,7 +35,7 @@ public class Hooks {
         properties.load(new FileReader("src/test/resources/config.properties"));
         driverManager = DriverManagerFactory.getManager(DriverType.valueOf(properties.getProperty("driverManager_type")));
         //driverManager = DriverManagerFactory.getManager(DriverType.CHROME);
-        LOGGER.log(Level.INFO, "Test run:" + driverManager);
+        LOGGER.log(Level.INFO, "Test Run:" + driverManager);
         driver = driverManager.getDriver();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         //driver.navigate().to("https://ww2.toctoc.com/gestioncorredor/");
@@ -49,7 +49,7 @@ public class Hooks {
             byte[] screenshot = ((TakesScreenshot) driverManager.getDriver()).getScreenshotAs(OutputType.BYTES);
             scenario.embed(screenshot, "image/png");
         }
-           LOGGER.log(Level.INFO, "El escenario nro; " + numerOfCase + " se ejecuto correctamente.");
+           LOGGER.log(Level.INFO, "El escenario nro; " + numerOfCase + " se ejecuto correctamente");
            driverManager.quitDriver();
     }
 
