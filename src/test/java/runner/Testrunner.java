@@ -30,10 +30,10 @@ public class Testrunner {
     public static void teardown(){
 
         try{
-            LOGGER.log(Level.INFO, "Gererando reporte...");
+            LOGGER.log(Level.INFO, "Gererando reporte CI...");
             String[]cmd ={"cmd.exe", "/c", "npm run report"};
             Runtime.getRuntime().exec(cmd);
-            LOGGER.log(Level.INFO, "Reporte generado satisfactoriamente!");
+            LOGGER.log(Level.INFO, "Reporte generado satisfactoriamente PRUEBA !");
             } catch (Exception ex){
                 LOGGER.log(Level.WARNING, "No se pudo generar el reporte.");
                 ex.printStackTrace();

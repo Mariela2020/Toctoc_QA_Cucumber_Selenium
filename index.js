@@ -21,8 +21,8 @@ report.generate({
             {label: 'Project', value: 'TOCTOC Gestión Corredora'},
             {label: 'Release', value: '1.2.3'},
             {label: 'Cycle', value: 'B11221.34321'},
-            {label: 'Execution Start Time', value: 'Ago 11th 2020, 19:28 PM'},
-            {label: 'Execution End Time', value: 'Ago 11th 2020, 19:28 PM'}
+            {label: 'Execution Start Time', value: 'Dec 29th 2020, 17:48 PM'},
+            {label: 'Execution End Time', value: 'Dec 29th 2020, 17:48 PM'}
         ]
     }
 });
