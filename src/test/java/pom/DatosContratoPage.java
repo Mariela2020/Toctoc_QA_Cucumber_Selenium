@@ -71,7 +71,8 @@ public class DatosContratoPage extends BasePage{
     @FindBy(xpath="//*[@id=\'actualizaInfo\']")
     private WebElement checkactualizaInfo;
 
-   @FindBy(xpath = "//*[@id=\"datosFactura\"]/div[4]/div/button[2]")
+  // @FindBy(xpath = "//*[@id=\"datosFactura\"]/div[4]/div/button[2]")
+   @FindBy(xpath= "//*[@id=\"datosFactura\"]/div[5]/div/button[2]")
    private WebElement btnContinuar;
 
     @FindBy(xpath="//*[@id=\"nextStep\"]")

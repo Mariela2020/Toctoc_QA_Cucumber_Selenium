@@ -49,7 +49,6 @@ public class DatosContratoPlan extends BasePage{
     private WebElement botonsiguiente;
 
     @FindBy (id = "//*[@id=\\\"datosFactura\\\"]/div[1]/h3[2]")
-   // @FindBy (xpath = "//*[@id=\\\"datosFactura\\\"]/div[1]/h3[2]")
     private By pasodosdetres;
 
     @FindBy (id = "nombreContacto")
@@ -85,12 +84,14 @@ public class DatosContratoPlan extends BasePage{
     @FindBy (id = "aceptaTerminos")
     private WebElement aceptaTerminos;
 
-    @FindBy (xpath = "//*[@id=\"datosFactura\"]/div[4]/div/button[2]")
+    @FindBy (xpath= "/html/body/div[2]/div/div/button/span")
+    private WebElement minhotjar;
+
+    ////button[. = 'Enviar']
+    //@FindBy (xpath = "//*[@id=\"datosFactura\"]/div[4]/div/button[2]")
+    @FindBy (xpath="//button[. = 'Enviar']")
     private WebElement botonenviar;
 
-  //  public boolean isImagenDisplayed4() throws Exception {
-  //      return this.isDisplayed(titleingresodatos) && this.getTitle().equals(titlePage8);
-   // }
 
     public boolean isImagenDisplayed8() throws Exception {
         return this.isDisplayed(pasounodetres) && this.getTitle().equals(titlePage33);
@@ -134,10 +135,13 @@ public class DatosContratoPlan extends BasePage{
     }
 
     public void ClickOnaceptaTerminos() throws Exception {
-            this.click(aceptaTerminos);
+        this.click(aceptaTerminos);
       }
 
     public void ClickOnbtnEnviar() throws Exception {
+
+        this.click(minhotjar);
+        Thread.sleep(2000);
         this.click(botonenviar);
     }
 }

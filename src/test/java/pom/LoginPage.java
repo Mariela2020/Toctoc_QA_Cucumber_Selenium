@@ -26,7 +26,7 @@ public class LoginPage extends BasePage{
     }
 
     public boolean isImagenDisplayed3() throws Exception {
-        Thread.sleep(5000);
+        Thread.sleep(4000);
         return this.isDisplayed(registerPageLocator) && this.getTitle().equals(titlePage7);
     }
 
